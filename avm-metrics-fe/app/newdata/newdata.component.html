@@ -1,1 +1,11 @@
-<h1>Add New Data</h1>
+<h1>{{ pageTitle }}</h1>
+
+<div *ngFor="let data of newdata">
+  <h3>{{ data.host_name }}</h3>
+  <em>{{ data.IP }}</em>
+  <p>OS: {{ data.OS }}</p>
+  <p>Critical Vulnerabilities: {{ data.critical_vul }}</p>
+  <p>Severe Vulnerabilities: {{ data.severe_vul }}</p>
+  <p>Last Discovered: {{ data.last_discovered }}</p>
+  <hr>
+</div>
