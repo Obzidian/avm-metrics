@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'app',
-  template: '<h1>AVM Metric Reporting Dashboard</h1>'
+  templateUrl: 'homepage.component.html';
 })
 export class HomepageComponent {}
